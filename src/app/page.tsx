@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen bg-white text-gray-900 font-sans">
       <NavBar />
 
       <main className="p-8 max-w-3xl mx-auto text-center">
@@ -17,16 +17,17 @@ export default function Home() {
         />
 
         <p className="mb-8 text-justify">
-  Bei soph.studio entstehen mit viel Liebe zum Detail handgemachte Taschen und Unikate, die den Alltag verschönern. 
-  Jedes Produkt ist ein kleines Kunstwerk, nachhaltig gefertigt und mit echter Hingabe vollendet. 
-  Ob als stilvolles Accessoire, als individuelles Geschenk oder als Ausdruck deines persönlichen Stils, hier findest du einzigartige Stücke, die Herz und Charakter verbinden. 
-  Entdecke eine Kollektion, in der Qualität, Kreativität und Persönlichkeit im Mittelpunkt stehen.
-</p>
-
-
+          Bei soph.studio entstehen mit viel Liebe zum Detail handgemachte Taschen 
+          und liebevoll gestaltete Unikate, die den Alltag bereichern und verschönern. 
+          Jedes einzelne Produkt ist ein kleines Kunstwerk, sorgfältig entworfen, nachhaltig gefertigt 
+          und mit echter Hingabe vollendet. Ob als stilvolles Accessoire, als persönliches Geschenk 
+          oder als Ausdruck deiner Individualität: Hier findest du besondere Stücke, 
+          die mit Herz, Charakter und einem feinen Gespür für Ästhetik gefertigt wurden. 
+          Entdecke eine Kollektion, in der Qualität, Kreativität und Persönlichkeit in jedem Detail spürbar sind.
+        </p>
 
         <Image
-          src="/soph.studio.jpg"
+          src="/green-blue-bag-half.jpg"
           alt="Startbild"
           width={500}
           height={500}

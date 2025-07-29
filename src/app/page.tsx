@@ -1,25 +1,40 @@
+import NavBar from "./components/NavBar"
+import Footer from "./components/Footer"
+import Image from "next/image"
+
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-gray-800">
-      <nav className="p-4 shadow-md bg-blue-600 text-white flex justify-between">
-        <div className="text-xl font-bold">My Landingpage</div>
-        <div className="space-x-4">
-          <a href="#about" className="hover:underline">About Me</a>
-          <a href="#products" className="hover:underline">Products</a>
-        </div>
-      </nav>
+    <div className="min-h-screen bg-white text-gray-900">
+      <NavBar />
 
-      <main className="p-8">
-        <section id="about" className="my-16">
-          <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-          <p>Hier kannst du kurz etwas über dich schreiben.</p>
-        </section>
+      <main className="p-8 max-w-3xl mx-auto text-center">
+        <Image
+          src="/soph.studio.logo.png"
+          alt="Logo"
+          width={400}
+          height={80}
+          className="mx-auto mb-6"
+        />
 
-        <section id="products" className="my-16">
-          <h2 className="text-2xl font-semibold mb-4">Products</h2>
-          <p>Stelle hier deine Produkte, Projekte oder Ideen vor.</p>
-        </section>
+        <p className="mb-8 text-justify">
+  Bei soph.studio entstehen mit viel Liebe zum Detail handgemachte Taschen und Unikate, die den Alltag verschönern. 
+  Jedes Produkt ist ein kleines Kunstwerk, nachhaltig gefertigt und mit echter Hingabe vollendet. 
+  Ob als stilvolles Accessoire, als individuelles Geschenk oder als Ausdruck deines persönlichen Stils, hier findest du einzigartige Stücke, die Herz und Charakter verbinden. 
+  Entdecke eine Kollektion, in der Qualität, Kreativität und Persönlichkeit im Mittelpunkt stehen.
+</p>
+
+
+
+        <Image
+          src="/soph.studio.jpg"
+          alt="Startbild"
+          width={500}
+          height={500}
+          className="mx-auto rounded-xl shadow-md"
+        />
       </main>
+
+      <Footer />
     </div>
   )
 }

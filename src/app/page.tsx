@@ -26,15 +26,23 @@ export default function Home() {
           Entdecke eine Kollektion, in der Qualität, Kreativität und Persönlichkeit in jedem Detail spürbar sind.
         </p>
 
-        <Image
-          src="/green-blue-bag-half.jpg"
-          alt="Startbild"
-          width={500}
-          height={500}
-          className="mx-auto rounded-xl shadow-md"
+        <div className="flex flex-wrap justify-center gap-6 mt-8">
+          <Image
+            src="/pics/green-blue-bag-half.jpg"
+            alt="Green-Blue Bag"
+            width={300}
+            height={300}
+            className="rounded-xl shadow-md"
+          />
+          <Image
+          src="/pics/brown_white_bag.jpg"
+          alt="Brown Bag"
+          width={300}
+          height={300}
+          className="rounded-xl shadow-md"
         />
+        </div>
       </main>
-
       <Footer />
     </div>
   )

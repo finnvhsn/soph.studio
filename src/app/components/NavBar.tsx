@@ -15,8 +15,9 @@ export default function NavBar() {
       </Link>
 
       <div className="space-x-4">
-        <Link href="/about" className="hover:underline">About Me</Link>
-        <Link href="/products" className="hover:underline">Products</Link>
+        <Link href="/products" className="hover:underline">Produkte</Link>
+        <Link href="/galery" className="hover:underline">Galerie</Link>
+        <Link href="/about" className="hover:underline">Über mich</Link>
       </div>
     </nav>
   )
